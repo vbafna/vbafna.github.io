@@ -1,10 +1,13 @@
 ---
 layout: profiles
-permalink: /people/
-title: lab
+permalink: /lab/
+title: Bafna Lab
+nav_title: lab
 description: members of the lab or group
 nav: true
 nav_order: 2
+redirect_from:
+  - /people/
 
 profiles:
   # if you want to include more than one profile, just replicate the following block

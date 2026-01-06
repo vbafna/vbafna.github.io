@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-bafna-lab",
           title: "Bafna Lab",
-          description: "members of the lab or group",
+          description: "under construction ...",
           section: "Navigation",
           handler: () => {
             window.location.href = "/lab/";
@@ -104,6 +104,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/AmpliconSuite", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/vineet-bafna-ab2a3810", "_blank");
         },
       },{
         id: 'social-scholar',

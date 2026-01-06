@@ -6,6 +6,8 @@ on:
 
 jobs:
   comment:
+    # Disabled: we no longer want to comment on prettier failures
+    if: ${{ false }}
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Professor of <a href='https://jacobsschool.ucsd.edu/node/3480'>Computer Science & Engineering</a>
+subtitle: Professor of <a href='https://jacobsschool.ucsd.edu/node/3480'>Computer Science & Engineering</a>. HDSI Chancelor's Professor III in Halicioglu Data Science Institute
 
 profile:
   align: right

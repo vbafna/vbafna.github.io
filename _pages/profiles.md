@@ -3,7 +3,7 @@ layout: profiles
 permalink: /lab/
 title: Bafna Lab
 nav_title: lab
-description: members of the lab or group
+description: under construction ...
 nav: true
 nav_order: 2
 redirect_from:

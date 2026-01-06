@@ -57,8 +57,8 @@
           </li>
 
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
-          {% for p in sorted_pages %}
+          {% assign nav_pages = site.pages | where_exp: "p", "p.nav" | sort: "nav_order" %}
+          {% for p in nav_pages %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}

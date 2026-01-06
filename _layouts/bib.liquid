@@ -1,13 +1,25 @@
 ---
 ---
 <div class="row">
-  {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
+{% assign entry_abbr = entry.abbr %}
+{% if entry_abbr == nil or entry_abbr == '' %}
+  {% assign venue_lookup_key = nil %}
+  {% if entry.journal %}
+    {% assign venue_lookup_key = entry.journal | downcase %}
+  {% elsif entry.booktitle %}
+    {% assign venue_lookup_key = entry.booktitle | downcase %}
+  {% endif %}
+  {% if venue_lookup_key and site.data.venue_abbr_map and site.data.venue_abbr_map[venue_lookup_key] %}
+    {% assign entry_abbr = site.data.venue_abbr_map[venue_lookup_key] %}
+  {% endif %}
+{% endif %}
+{% if site.enable_publication_thumbnails %}
+  <div class="col col-sm-2 abbr">
+      {%- if entry_abbr -%}
+        {%- if site.data.venues[entry_abbr] -%}
           {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+          {% if site.data.venues[entry_abbr].color != blank %}
+            {% assign venue_style = site.data.venues[entry_abbr].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
             class="badge rounded w-100"
@@ -15,14 +27,14 @@
               {{ venue_style }}
             {% endif -%}
           >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+            {% if site.data.venues[entry_abbr].url %}
+              <a href="{{ site.data.venues[entry_abbr].url }}">{{ entry_abbr }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{- entry_abbr -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100">{{ entry_abbr }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}

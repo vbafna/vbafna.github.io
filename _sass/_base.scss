@@ -539,6 +539,14 @@ footer.sticky-bottom {
   }
 }
 
+/* Lab cards */
+.lab-grid {
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
 .table-cv-map {
   background-color: transparent;
   border: none;

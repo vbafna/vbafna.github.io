@@ -1,0 +1,67 @@
+---
+layout: page
+---
+{% assign roles_order = "Professor|PostDoc/Scientist|PhD Student|Master's Student|Undergraduate Student" | split: "|" %}
+{% assign lab_members = site.lab | sort: "lastname" | sort: "firstname" %}
+
+{% assign ordered_people = "" | split: "|" %}
+
+{%- comment -%}Add professor first{%- endcomment -%}
+{% assign prof = page.professor %}
+{% if prof == nil %}
+  {% assign prof = site.professor %}
+{% endif %}
+{% if prof %}
+  {% assign ordered_people = ordered_people | push: prof | uniq %}
+{% endif %}
+
+{%- comment -%}Then add members grouped by role order{%- endcomment -%}
+{% for role in roles_order offset:1 %}
+  {% assign group = lab_members | where: "role", role %}
+  {% if role == "PostDoc/Scientist" %}
+    {% assign scientists = lab_members | where: "role", "Scientist" %}
+    {% assign postdoc_scientists = lab_members | where: "role", "PostDoc/Scientist" %}
+    {% assign postdocs = lab_members | where: "role", "PostDoc" %}
+    {% assign project_scientists = lab_members | where: "role", "Project Scientist" %}
+    {% assign group = scientists | concat: project_scientists | concat: postdoc_scientists | concat: postdocs %}
+  {% endif %}
+  {% assign ordered_people = ordered_people | concat: group %}
+{% endfor %}
+
+<div class="lab-grid">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    {% for person in ordered_people %}
+      <div class="col mb-4">
+        <div class="card h-100">
+          {% assign image_path = nil %}
+          {% assign person_role = person.role | default: "Professor" %}
+          {% if person == prof %}
+            {% assign person_name = person.name | default: "Professor" %}
+          {% else %}
+            {% assign person_name = person.firstname | append: " " | append: person.lastname %}
+          {% endif %}
+          {% if person.image %}
+            {% assign image_path = person.image | prepend: 'assets/img/' %}
+            {% include figure.liquid loading="lazy" path=image_path class="card-img-top rounded-top" alt=person_name %}
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title mb-1">{{ person_name | strip }}</h5>
+            <p class="card-text text-muted mb-2">
+              {% if person == prof %}
+                Professor
+              {% else %}
+                {{ person_role }}
+              {% endif %}
+            </p>
+            {% if person.description %}
+              <p class="card-text">{{ person.description }}</p>
+            {% endif %}
+            {% if person.website %}
+              <a class="stretched-link" href="{{ person.website }}" {% if person.website contains '://' %}rel="noopener" target="_blank"{% endif %}></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

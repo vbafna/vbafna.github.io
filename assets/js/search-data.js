@@ -37,31 +37,6 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "lab-",
           title: '',
-          description: "Building pipelines for epigenomics analyses.",
-          section: "Lab",handler: () => {
-              window.location.href = "/lab/example_masters/";
-            },},{id: "lab-",
-          title: '',
-          description: "Studies structural variation in cancer genomes.",
-          section: "Lab",handler: () => {
-              window.location.href = "/lab/example_postdoc/";
-            },},{id: "lab-",
-          title: '',
-          description: "Leads single-cell sequencing platform development.",
-          section: "Lab",handler: () => {
-              window.location.href = "/lab/example_scientist/";
-            },},{id: "lab-",
-          title: '',
-          description: "Works on genome assembly algorithms and data visualization.",
-          section: "Lab",handler: () => {
-              window.location.href = "/lab/example_student/";
-            },},{id: "lab-",
-          title: '',
-          description: "Exploring graph algorithms for transcriptomics.",
-          section: "Lab",handler: () => {
-              window.location.href = "/lab/example_undergrad/";
-            },},{id: "lab-",
-          title: '',
           description: "",
           section: "Lab",handler: () => {
               window.location.href = "/lab/mahsa/";

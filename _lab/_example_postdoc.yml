@@ -1,7 +1,8 @@
 ---
 firstname: Example
 lastname: Postdoc
-role: PostDoc
+role: Postdoctoral Researcher
+active: false
 description: Studies structural variation in cancer genomes.
 image: prof_pic_color.jpg
 website:

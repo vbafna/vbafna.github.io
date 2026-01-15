@@ -2,6 +2,7 @@
 firstname: Example
 lastname: PhD
 role: PhD Student
+active: false
 description: Works on genome assembly algorithms and data visualization.
 image: prof_pic_color.jpg
 website:

@@ -2,6 +2,7 @@
 firstname: Example
 lastname: Scientist
 role: Project Scientist
+active: false
 description: Leads single-cell sequencing platform development.
 image: prof_pic_color.jpg
 website:

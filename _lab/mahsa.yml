@@ -2,7 +2,8 @@
 firstname: Mahsa
 lastname: Faizrahnemoon
 role: Postdoctoral Researcher
-description: 
+active: true
+description:
 image: mahsa.jpg
 website:
 ---

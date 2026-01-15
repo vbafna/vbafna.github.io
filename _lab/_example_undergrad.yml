@@ -2,6 +2,7 @@
 firstname: Example
 lastname: Undergraduate
 role: Undergraduate Student
+active: false
 description: Exploring graph algorithms for transcriptomics.
 image: prof_pic_color.jpg
 website:

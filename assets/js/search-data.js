@@ -62,7 +62,7 @@ ninja.data = [{
               window.location.href = "/lab/example_undergrad/";
             },},{id: "lab-",
           title: '',
-          description: "Building pipelines for epigenomics analyses.",
+          description: "",
           section: "Lab",handler: () => {
               window.location.href = "/lab/mahsa/";
             },},{id: "news-a-simple-inline-announcement",

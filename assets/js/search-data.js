@@ -60,6 +60,11 @@ ninja.data = [{
           description: "Exploring graph algorithms for transcriptomics.",
           section: "Lab",handler: () => {
               window.location.href = "/lab/example_undergrad/";
+            },},{id: "lab-",
+          title: '',
+          description: "Building pipelines for epigenomics analyses.",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/mahsa/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",

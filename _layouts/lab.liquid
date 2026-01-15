@@ -1,8 +1,8 @@
 ---
 layout: page
 ---
-{% assign roles_order = "Professor|PostDoc/Scientist|PhD Student|Master's Student|Undergraduate Student" | split: "|" %}
-{% assign lab_members = site.lab | sort: "lastname" | sort: "firstname" %}
+{% assign roles_order = "Professor|Project Scientist|Scientist|Postdoctoral Researcher|PhD Student|Master's Student|Undergraduate Student" | split: "|" %}
+{% assign lab_members = site.lab | where: "active", true | sort: "lastname" | sort: "firstname" %}
 
 {% assign ordered_people = "" | split: "|" %}
 
@@ -18,12 +18,10 @@ layout: page
 {%- comment -%}Then add members grouped by role order{%- endcomment -%}
 {% for role in roles_order offset:1 %}
   {% assign group = lab_members | where: "role", role %}
-  {% if role == "PostDoc/Scientist" %}
-    {% assign scientists = lab_members | where: "role", "Scientist" %}
-    {% assign postdoc_scientists = lab_members | where: "role", "PostDoc/Scientist" %}
-    {% assign postdocs = lab_members | where: "role", "PostDoc" %}
-    {% assign project_scientists = lab_members | where: "role", "Project Scientist" %}
-    {% assign group = scientists | concat: project_scientists | concat: postdoc_scientists | concat: postdocs %}
+  {% assign group_examples = group | where: "firstname", "Example" %}
+  {% assign group_real = group | where_exp: "person", "person.firstname != 'Example'" %}
+  {% if group_real.size > 0 %}
+    {% assign group = group_real %}
   {% endif %}
   {% assign ordered_people = ordered_people | concat: group %}
 {% endfor %}

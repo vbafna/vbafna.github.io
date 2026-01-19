@@ -28,12 +28,4 @@ I am a Professor of <a href='https://jacobsschool.ucsd.edu/node/3480'>Computer S
 
 In a past life, I was a senior investigator at SmithKline Beecham and Director of Informatics Research at Celera Genomics participating in the sequence assembly and annotation of the human genome. At UC San Diego, I served as the Director of the Bioinformatics and Systems Biology Ph.D. program from 2013-19.
 
- My research focuses on identifying mechanisms of complex genome rearrangements in cancer, with a specific focus on ecDNA. I have also contributed to the identification of genetic signals of adaptation in human populations and in experimentally evolving  organisms, and to the identification of mutated and modified proteomes through proteogenomics. I am the scientific co-founder of two companies: Abterra, Inc., which develops services and products relating to antibody analysis and proteomics, and Boundless Bio, Inc., which is targeting extrachromosomal DNA in cancer. I am an elected fellow of the <a href="https://www.iscb.org/">International Society of Computational Biology (2019)</a>, and an <a href="https://www.acm.org/"> ACM fellow (2023) </a> .
-
-<!--Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
--->
+My research focuses on identifying mechanisms of complex genome rearrangements in cancer, with a specific focus on ecDNA. I have also contributed to the identification of genetic signals of adaptation in human populations and in experimentally evolving  organisms, and to the identification of mutated and modified proteomes through proteogenomics. I am the scientific co-founder of two companies: Abterra, Inc., which develops services and products relating to antibody analysis and proteomics, and Boundless Bio, Inc., which is targeting extrachromosomal DNA in cancer. I am an elected fellow of the <a href="https://www.iscb.org/">International Society of Computational Biology (2019)</a>, and an <a href="https://www.acm.org/"> ACM fellow (2023) </a> .

@@ -18,5 +18,5 @@ professor:
 ## Alumni
 
 <!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
-- Kaiyuan Zhu
+- <a href="">Kaiyuan Zhu</a>
 - (Name 2)

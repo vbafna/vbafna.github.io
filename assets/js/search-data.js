@@ -47,6 +47,11 @@ ninja.data = [{
               window.location.href = "/lab/GinoPrasad/";
             },},{id: "lab-",
           title: '',
+          description: "everything ecDNA",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/JensLuebeck/";
+            },},{id: "lab-",
+          title: '',
           description: "Karyotyping, ecDNA Junction",
           section: "Lab",handler: () => {
               window.location.href = "/lab/ZhaoyangJia/";

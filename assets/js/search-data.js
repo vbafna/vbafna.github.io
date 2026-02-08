@@ -37,6 +37,11 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "lab-",
           title: '',
+          description: "ecDNA evolution",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/Bhargavi/";
+            },},{id: "lab-",
+          title: '',
           description: "BFB, 3D",
           section: "Lab",handler: () => {
               window.location.href = "/lab/ChaohuiLi/";
@@ -57,7 +62,7 @@ ninja.data = [{
               window.location.href = "/lab/ZhaoyangJia/";
             },},{id: "lab-",
           title: '',
-          description: "",
+          description: "Cycle extraction",
           section: "Lab",handler: () => {
               window.location.href = "/lab/mahsa/";
             },},{id: "lab-",

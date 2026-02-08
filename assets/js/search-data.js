@@ -40,6 +40,11 @@ ninja.data = [{
           description: "",
           section: "Lab",handler: () => {
               window.location.href = "/lab/mahsa/";
+            },},{id: "lab-",
+          title: '',
+          description: "ecDNA detection",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/simone/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",

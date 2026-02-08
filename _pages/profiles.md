@@ -19,7 +19,7 @@ professor:
 
 <!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
 - <a href="https://scholar.google.com/citations?user=44g2NCsAAAAJ&hl=en">Kaiyuan Zhu</a>
-- Sara Javadzadeh	PhD, 2025	PhD
+- Sara Javadzadeh	PhD, 2025
 - Jonghun Park	PhD, 2025
 - Biswanath Chowdhuri	Postdoc, 2024	
 - Miin Lin	PhD, 2023

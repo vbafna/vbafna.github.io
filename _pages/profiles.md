@@ -14,3 +14,9 @@ professor:
   image: headshot.jpg
   description: Bioinformatics researcher and HDSI Chancellor's Professor.
 ---
+
+## Alumni
+
+<!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
+- (Name 1)
+- (Name 2)

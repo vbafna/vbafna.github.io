@@ -278,8 +278,12 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year, display_order
-  group_order: descending,descending
+  group_by: year
+  group_order: descending
+
+  # Ordering within each year
+  sort_by: [display_order]
+  order: [descending]
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid

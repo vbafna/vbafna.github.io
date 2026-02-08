@@ -37,6 +37,21 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "lab-",
           title: '',
+          description: "BFB, 3D",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/ChaohuiLi/";
+            },},{id: "lab-",
+          title: '',
+          description: "Deep learning tools for ecDNA analysis",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/GinoPrasad/";
+            },},{id: "lab-",
+          title: '',
+          description: "Karyotyping, ecDNA Junction",
+          section: "Lab",handler: () => {
+              window.location.href = "/lab/ZhaoyangJia/";
+            },},{id: "lab-",
+          title: '',
           description: "",
           section: "Lab",handler: () => {
               window.location.href = "/lab/mahsa/";

@@ -19,34 +19,20 @@ professor:
 
 <!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
 - <a href="https://scholar.google.com/citations?user=44g2NCsAAAAJ&hl=en">Kaiyuan Zhu</a>
-- Sara Javadzadeh	PhD, 2025
-- Jonghun Park	PhD, 2025
-- Biswanath Chowdhuri	Postdoc, 2024	
-- Miin Lin	PhD, 2023
-- Shahabeddin Sarmeshghi	PhD, 2022
-- Utkrisht Rajkumar	PhD, 2022	
-- Jens Luebeck, PhD	2022
-- Mehrdad Bakhtiari PhD, 2020
-- Ali Akbari	PhD, 2019
-- Arya Iranmehr	PhD, 2019
-- Stephanie Feudji PhD,2019
-- Viraj Deshpande	PhD, 2018
-- Seong W Cha	PhD, 2017
-- Doruk Beyter	PhD, 2017
-- Christine Lo	PhD, 2016
-- Anand Patel 	PhD, 2015
-- Sunghee Woo	PhD, 2014
-- Roy Ronen	PhD, 2014
-- Shay Zakov	Postdoc, 2014	
-- Sangwoo Kim, Postdoc 2013
-- Marcus Kinsella PhD, 2013
-- Nitin Udpa	PhD, 2013
-- Christos Kozanitis	PhD, 2013
-- Natalie Castellana	PhD, 2012
-- Jocelyne Bruand	PhD, 2012
-- Banu Dost PhD, 2010
-- Ali Bashir PhD, 2009
-- Vikas Bansal	PhD, 2008
-- Samuel H. Payne	PhD, 2008
-- Stephen Tanner	PhD, 2007
-- Shaojie Zhang	PhD, 2007
+- <a href="">Anand Patel </a>	PhD, 2015
+- <a href="">Sunghee Woo</a>	PhD, 2014
+- <a href="">Roy Ronen</a>	PhD, 2014
+- <a href="">Shay Zakov </a>Postdoc, 2014	
+- <a href="">Sangwoo Kim </a> Postdoc 2013
+- <a href="">Marcus Kinsella</a> PhD, 2013
+- <a href="">Nitin Udpa</a>	PhD, 2013
+- <a href="">Christos Kozanitis</a>	PhD, 2013
+- <a href="">Natalie Castellana</a>	PhD, 2012
+- <a href="">Jocelyne Bruand</a>	PhD, 2012
+- <a href="">Banu Dost</a> PhD, 2010
+- <a href="">Ali Bashir</a> PhD, 2009
+- <a href="">Vikas Bansal</a>	PhD, 2008
+- <a href="">Samuel H. Payne</a> PhD, 2008
+- <a href="">Stephen Tanner	PhD, 2007</a>
+- <a href="https://www.cs.ucf.edu/~shzhang/">Shaojie Zhang	PhD, 2007</a>
+

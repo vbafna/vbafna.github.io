@@ -27,7 +27,7 @@ professor:
 - <a href="https://www.linkedin.com/in/utkrisht-rajkumar/">Utkrisht Rajkumar</a>	PhD, 2022	(&rArr; Amazon)
 - <a href="https://www.linkedin.com/in/jens-luebeck-b5639a256/">Jens Luebeck,</a> PhD	2022 (&rArr; UCSD)
 - <a href=""> Nam Nguyen </a> Postdoc 2020
-- <a href="https://www.linkedin.com/in/mehrdadbakhtiari/">Mehrdad Bakhtiari</a> PhD, 2020 (rArr; Uber)
+- <a href="https://www.linkedin.com/in/mehrdadbakhtiari/">Mehrdad Bakhtiari</a> PhD, 2020 (&rArr; Uber)
 - <a href="https://www.linkedin.com/in/aliakbari1/">Ali Akbari</a>	PhD, 2019 (&rArr; Broad Institute)
 - <a href="https://www.linkedin.com/in/arya-iranmehr-572aa038/">Arya Iranmehr</a>	PhD, 2019 (&rArr; Intuit)
 - <a href="https://www.linkedin.com/in/virajbdeshpande/">Viraj Deshpande</a>	PhD, 2018 (&rArr; co-Founder MiVax)

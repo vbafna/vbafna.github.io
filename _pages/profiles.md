@@ -18,7 +18,7 @@ professor:
 ## Alumni
 
 <!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
-- <a href="https://scholar.google.com/citations?user=44g2NCsAAAAJ&hl=en">Kaiyuan Zhu</a> PostDoc, 2025
+- <a href="https://scholar.google.com/citations?user=44g2NCsAAAAJ&hl=en">Kaiyuan Zhu</a> PostDoc, 2025 (&rArr; faculty, Shanghai Jiao Tong University (SJTU))
 - <a href="https://www.linkedin.com/in/sara-javadzadeh-b2b1b377/">Sara Javadzadeh</a>	PhD, 2025
 - <a href="https://www.linkedin.com/in/jonghun-park-49288515b/">Jonghun Park</a>	PhD, 2025
 - <a href="https://www.linkedin.com/in/biswanath-chowdhury-a2195026/">Biswanath Chowdhuri </a>	Postdoc, 2024	

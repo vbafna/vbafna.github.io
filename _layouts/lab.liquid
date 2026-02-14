@@ -54,8 +54,9 @@ layout: page
             {% if person.description %}
               <p class="card-text">{{ person.description }}</p>
             {% endif %}
-            {% if person.website %}
-              <a class="stretched-link" href="{{ person.website }}" {% if person.website contains '://' %}rel="noopener" target="_blank"{% endif %}></a>
+            {% assign website = person.website | default: "" | strip %}
+            {% if website != "" %}
+              <a class="stretched-link" href="{{ website | escape }}" {% if website contains '://' %}rel="noopener" target="_blank"{% endif %}></a>
             {% endif %}
           </div>
         </div>

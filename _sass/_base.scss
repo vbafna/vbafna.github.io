@@ -550,11 +550,18 @@ footer.sticky-bottom {
 /* Photo carousel (e.g., lab home page) */
 .photo-carousel {
   margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+
+  .carousel,
+  .carousel-inner {
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
 
   .carousel-item img {
-    height: clamp(220px, 35vw, 420px);
+    height: clamp(180px, 28vw, 320px);
     object-fit: cover;
-    border-radius: 0.25rem;
   }
 
   .carousel-caption {
@@ -562,6 +569,11 @@ footer.sticky-bottom {
     border-radius: 0.25rem;
     padding: 0.5rem 0.75rem;
   }
+}
+
+/* Ensure carousel never visually overlaps the lab grid */
+.photo-carousel + .lab-grid {
+  margin-top: 1.5rem;
 }
 
 .table-cv-map {

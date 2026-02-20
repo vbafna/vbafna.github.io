@@ -549,18 +549,27 @@ footer.sticky-bottom {
 
 /* Photo carousel (e.g., lab home page) */
 .photo-carousel {
+  --photo-carousel-height: clamp(120px, 18vw, 220px);
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   position: relative;
   z-index: 1;
+  display: block;
+  clear: both;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 
   .carousel,
-  .carousel-inner {
+  .carousel-inner,
+  .carousel-item {
     border-radius: 0.25rem;
     overflow: hidden;
+    height: var(--photo-carousel-height);
   }
 
   .carousel-item img {
-    height: clamp(180px, 28vw, 320px);
+    height: 100%;
     object-fit: cover;
   }
 

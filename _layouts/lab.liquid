@@ -1,6 +1,9 @@
 ---
 layout: page
 ---
+{% if page.carousel and page.carousel.enabled %}
+  {% include photo_carousel.liquid carousel=page.carousel %}
+{% endif %}
 {% assign roles_order = "Professor|Project Scientist|Scientist|Postdoctoral Researcher|PhD Student|Master's Student|Undergraduate Student" | split: "|" %}
 {% assign lab_members = site.lab | where: "active", true | sort: "lastname" | sort: "firstname" %}
 

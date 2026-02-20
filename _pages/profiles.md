@@ -13,6 +13,16 @@ professor:
   name: Vineet Bafna
   image: headshot.jpg
   description: Bioinformatics researcher and HDSI Chancellor's Professor.
+
+# Photo carousel shown above the lab grid (optional).
+# Add images under `assets/img/` and list them here.
+carousel:
+  enabled: false
+  id: lab-photo-carousel
+  interval: 6000
+  show_indicators: true
+  show_controls: true
+  images: []
 ---
 
 ## Alumni
@@ -50,4 +60,3 @@ professor:
 - <a href="https://biology.byu.edu/directory/samuel-payne">Samuel H. Payne</a> PhD, 2008 (&rArr; faculty at BYU)
 - <a href="https://www.linkedin.com/in/robostephen/">Stephen Tanner	PhD, 2007</a> (&rArr; Tempus)
 - <a href="https://www.cs.ucf.edu/~shzhang/">Shaojie Zhang PhD, 2007</a> (&rArr; faculty UCF)
-

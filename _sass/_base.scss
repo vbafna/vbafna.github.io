@@ -547,6 +547,23 @@ footer.sticky-bottom {
   }
 }
 
+/* Photo carousel (e.g., lab home page) */
+.photo-carousel {
+  margin-bottom: 1.5rem;
+
+  .carousel-item img {
+    height: clamp(220px, 35vw, 420px);
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
 .table-cv-map {
   background-color: transparent;
   border: none;

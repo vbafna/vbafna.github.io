@@ -28,7 +28,7 @@ carousel:
       caption: "April2025"
     - path: "lab/IMG_2186.jpg"
       alt: ""
-      caption: "Nov2025"
+      caption: "Nov 2025"
 ---
 
 ## Alumni

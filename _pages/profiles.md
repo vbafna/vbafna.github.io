@@ -22,7 +22,10 @@ carousel:
   interval: 6000
   show_indicators: true
   show_controls: true
-  images: [lab/IMG_1168.jpg]
+  images:
+    - path: "lab/IMG_1168.jpg"
+      alt: ""
+      caption: ""
 ---
 
 ## Alumni

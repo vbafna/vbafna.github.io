@@ -553,12 +553,14 @@ footer.sticky-bottom {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: block;
   clear: both;
+  display: flow-root;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  min-height: calc(var(--photo-carousel-height) + 2.25rem);
 
   .carousel,
   .carousel-inner,
@@ -566,6 +568,11 @@ footer.sticky-bottom {
     border-radius: 0.25rem;
     overflow: hidden;
     height: var(--photo-carousel-height);
+  }
+
+  .carousel {
+    position: relative !important;
+    float: none !important;
   }
 
   .carousel-item img {
@@ -583,6 +590,10 @@ footer.sticky-bottom {
 /* Ensure carousel never visually overlaps the lab grid */
 .photo-carousel + .lab-grid {
   margin-top: 1.5rem;
+}
+
+.lab-content {
+  clear: both;
 }
 
 .table-cv-map {

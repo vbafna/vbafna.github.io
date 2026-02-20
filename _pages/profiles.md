@@ -17,7 +17,7 @@ professor:
 # Photo carousel shown below the lab grid (optional).
 # Add images under `assets/img/` and list them here.
 carousel:
-  enabled: true
+  enabled: false
   id: lab-photo-carousel
   interval: 6000
   show_indicators: true

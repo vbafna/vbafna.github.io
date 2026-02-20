@@ -25,7 +25,10 @@ carousel:
   images:
     - path: "lab/IMG_1168.jpg"
       alt: ""
-      caption: ""
+      caption: "April2025"
+    - path: "lab/IMG_2186.jpg"
+      alt: ""
+      caption: "Nov2025"
 ---
 
 ## Alumni

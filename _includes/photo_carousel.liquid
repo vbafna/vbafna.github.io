@@ -1,0 +1,81 @@
+{%- assign carousel = include.carousel -%}
+{%- if carousel == nil -%}{%- assign carousel = include -%}{%- endif -%}
+
+{%- assign enabled = carousel.enabled | default: false -%}
+{%- assign images = carousel.images -%}
+{%- if images == nil -%}{%- assign images = "" | split: "|" -%}{%- endif -%}
+{%- if enabled != true or images.size == 0 -%}
+  {%- comment -%}No-op when disabled or no images provided.{%- endcomment -%}
+{%- else -%}
+  {%- assign carousel_id = carousel.id | default: "photo-carousel" -%}
+  {%- assign interval = carousel.interval | default: 6000 -%}
+  {%- assign show_controls = carousel.show_controls | default: true -%}
+  {%- assign show_indicators = carousel.show_indicators | default: true -%}
+
+  <div class="photo-carousel">
+    <div id="{{ carousel_id | escape }}" class="carousel slide" data-ride="carousel" data-interval="{{ interval | escape }}">
+      {%- if show_indicators and images.size > 1 -%}
+        <ol class="carousel-indicators">
+          {%- for item in images -%}
+            <li
+              data-target="#{{ carousel_id | escape }}"
+              data-slide-to="{{ forloop.index0 }}"
+              class="{% if forloop.first %}active{% endif %}"
+              aria-label="Slide {{ forloop.index }}"
+            ></li>
+          {%- endfor -%}
+        </ol>
+      {%- endif -%}
+
+      <div class="carousel-inner">
+        {%- for item in images -%}
+          {%- if item.path -%}
+            {%- assign raw_path = item.path -%}
+          {%- else -%}
+            {%- assign raw_path = item -%}
+          {%- endif -%}
+
+          {%- assign alt = item.alt | default: "" -%}
+          {%- assign caption = item.caption | default: "" -%}
+
+          {%- if raw_path contains '://' -%}
+            {%- assign src = raw_path -%}
+          {%- else -%}
+            {%- assign first_char = raw_path | slice: 0, 1 -%}
+            {%- assign first_segment = raw_path | slice: 0, 7 -%}
+            {%- if first_char == '/' or first_segment == 'assets/' -%}
+              {%- assign src = raw_path | relative_url -%}
+            {%- else -%}
+              {%- assign src = raw_path | prepend: 'assets/img/' | relative_url -%}
+            {%- endif -%}
+          {%- endif -%}
+
+          <div class="carousel-item{% if forloop.first %} active{% endif %}">
+            <img
+              class="d-block w-100"
+              src="{{ src | escape }}"
+              alt="{{ alt | escape }}"
+              {% unless forloop.first %}loading="lazy"{% endunless %}
+            >
+            {%- if caption != "" -%}
+              <div class="carousel-caption d-none d-md-block">
+                <p class="mb-0">{{ caption }}</p>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if show_controls and images.size > 1 -%}
+        <a class="carousel-control-prev" href="#{{ carousel_id | escape }}" role="button" data-slide="prev" aria-label="Previous slide">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#{{ carousel_id | escape }}" role="button" data-slide="next" aria-label="Next slide">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

@@ -14,18 +14,18 @@ professor:
   image: headshot.jpg
   description: Bioinformatics researcher and HDSI Chancellor's Professor.
 
-# Photo carousel shown above the lab grid (optional).
+# Photo carousel shown below the lab grid (optional).
 # Add images under `assets/img/` and list them here.
-#carousel:
-#  enabled: false
-#  id: lab-photo-carousel
-#  interval: 6000
-#  show_indicators: true
-#  show_controls: true
-#  images:
-#    - path: "lab/IMG_1168.jpg"
-#      alt: ""
-#      caption: "April2025"
+carousel:
+  enabled: false
+  id: lab-photo-carousel
+  interval: 6000
+  show_indicators: true
+  show_controls: true
+  images:
+    - path: "lab/IMG_1168.jpg"
+      alt: ""
+      caption: "April2025"
 #    - path: "lab/IMG_2186.jpg"
 #      alt: ""
 #      caption: "Nov 2025"

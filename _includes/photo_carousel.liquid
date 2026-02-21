@@ -53,7 +53,7 @@
           <div class="carousel-item{% if forloop.first %} active{% endif %}">
             <div class="photo-carousel__image">
               <img
-                class="d-block w-100"
+                class="d-block photo-carousel__img"
                 src="{{ src | escape }}"
                 alt="{{ alt | escape }}"
                 {% unless forloop.first %}loading="lazy"{% endunless %}

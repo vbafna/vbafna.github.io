@@ -36,7 +36,7 @@ carousel:
 <!-- Add names here; this section is rendered below the lab grid via `_layouts/lab.liquid`. -->
 - <a href="https://scholar.google.com/citations?user=44g2NCsAAAAJ&hl=en">Kaiyuan Zhu</a> PostDoc, 2025 (&rArr; faculty, Shanghai Jiao Tong University (SJTU))
 - <a href="https://www.linkedin.com/in/sara-javadzadeh-b2b1b377/">Sara Javadzadeh</a>	PhD, 2025 (&rArr; Google)
-- <a href="https://www.linkedin.com/in/jonghun-park-49288515b/">Jonghun Park</a>	PhD, 2025 (&Arr; Natera)
+- <a href="https://www.linkedin.com/in/jonghun-park-49288515b/">Jonghun Park</a>	PhD, 2025 (&rArr; Natera)
 - <a href="https://www.linkedin.com/in/biswanath-chowdhury-a2195026/">Biswanath Chowdhuri </a>	Postdoc, 2024	(&rArr; Postdoc NYGC)
 - <a href="https://www.linkedin.com/in/miinslin/">Miin Lin</a> PhD, 2023 (&rArr; Abterra)
 - <a href="https://www.linkedin.com/in/shahab-sarmashghi-2ab79782/">Shahabeddin Sarmeshghi</a>	PhD, 2022 (&rArr; Broad Institute)

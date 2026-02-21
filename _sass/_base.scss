@@ -575,9 +575,15 @@ footer.sticky-bottom {
     border-radius: 0.25rem;
     overflow: hidden;
     background-color: var(--global-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    img {
-      height: 100%;
+    .photo-carousel__img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
       object-position: center;
       background-color: var(--global-bg-color);

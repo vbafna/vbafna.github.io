@@ -30,6 +30,7 @@ carousel:
       alt: ""
       caption: "Aug 2025"
     - path: "lab/IMG_5989.jpg"
+      alt: ""
       caption: "Nov 2025"
 ---
 

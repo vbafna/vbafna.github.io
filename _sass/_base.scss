@@ -577,7 +577,9 @@ footer.sticky-bottom {
 
   .carousel-item img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--global-bg-color);
   }
 
   .carousel-caption {

@@ -1,9 +1,10 @@
 # based on https://distresssignal.org/busting-css-cache-with-jekyll-md5-hash
 # https://gist.github.com/BryanSchuetz/2ee8c115096d7dd98f294362f6a667db
+require 'digest/md5'
+
 module Jekyll
   module CacheBust
     class CacheDigester
-      require 'digest/md5'
       require 'pathname'
 
       attr_accessor :file_name, :directory
@@ -43,7 +44,18 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      sass_contents =
+        Dir[File.join('_sass', '**', '*')]
+          .sort
+          .map { |f| File.read(f) unless File.directory?(f) }
+          .join
+
+      main_scss_path = File.join('assets', 'css', 'main.scss')
+      if File.exist?(main_scss_path)
+        sass_contents += File.read(main_scss_path)
+      end
+
+      [file_name, '?', Digest::MD5.hexdigest(sass_contents)].join
     end
   end
 end

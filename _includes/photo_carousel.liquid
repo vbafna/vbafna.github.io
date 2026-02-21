@@ -51,14 +51,16 @@
           {%- endif -%}
 
           <div class="carousel-item{% if forloop.first %} active{% endif %}">
-            <img
-              class="d-block w-100"
-              src="{{ src | escape }}"
-              alt="{{ alt | escape }}"
-              {% unless forloop.first %}loading="lazy"{% endunless %}
-            >
+            <div class="photo-carousel__image">
+              <img
+                class="d-block w-100"
+                src="{{ src | escape }}"
+                alt="{{ alt | escape }}"
+                {% unless forloop.first %}loading="lazy"{% endunless %}
+              >
+            </div>
             {%- if caption != "" -%}
-              <div class="carousel-caption d-none d-md-block">
+              <div class="photo-carousel__caption">
                 <p class="mb-0">{{ caption }}</p>
               </div>
             {%- endif -%}

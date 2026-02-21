@@ -560,32 +560,38 @@ footer.sticky-bottom {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  min-height: calc(var(--photo-carousel-height) + 2.25rem);
-
-  .carousel,
-  .carousel-inner,
-  .carousel-item {
-    border-radius: 0.25rem;
-    overflow: hidden;
-    height: var(--photo-carousel-height);
-  }
 
   .carousel {
     position: relative !important;
     float: none !important;
   }
 
-  .carousel-item img {
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    background-color: var(--global-bg-color);
+  .carousel-inner {
+    border-radius: 0.25rem;
   }
 
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.45);
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-carousel__image {
+    height: var(--photo-carousel-height);
     border-radius: 0.25rem;
-    padding: 0.5rem 0.75rem;
+    overflow: hidden;
+    background-color: var(--global-bg-color);
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background-color: var(--global-bg-color);
+    }
+  }
+
+  .photo-carousel__caption {
+    margin-top: 0.5rem;
+    color: var(--global-text-color);
   }
 }
 

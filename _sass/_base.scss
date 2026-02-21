@@ -549,7 +549,7 @@ footer.sticky-bottom {
 
 /* Photo carousel (e.g., lab home page) */
 .photo-carousel {
-  --photo-carousel-height: clamp(120px, 18vw, 400px);
+  --photo-carousel-height: clamp(240px, 36vw, 800px);
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   position: relative;

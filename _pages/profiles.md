@@ -31,7 +31,7 @@ carousel:
       caption: "lab 2024"
     - path: "lab/IMG_2186.jpg"
       alt: "IMG_2186.jpg"
-      caption: "lab 2025"
+      caption: "Sara and Siavash 2025"
     - path: "lab/IMG_5989.jpg"
       alt: "IMG_5989.jpg"
       caption: "lab 2025"

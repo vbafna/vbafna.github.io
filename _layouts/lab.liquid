@@ -40,7 +40,7 @@ layout: page
           {% endif %}
           {% if person.image %}
             {% assign image_path = person.image | prepend: 'assets/img/' %}
-            {% include figure.liquid loading="lazy" path=image_path class="card-img-top rounded-top" alt=person_name %}
+            {% include figure.liquid loading="lazy" path=image_path class="card-img-top rounded-top" alt=person_name object_position=person.image_position %}
           {% endif %}
           <div class="card-body">
             <h5 class="card-title mb-1">{{ person_name | strip }}</h5>
